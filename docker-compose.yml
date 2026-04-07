@@ -1,0 +1,43 @@
+﻿version: '3.9'
+
+services:
+  rowboat:
+    build: ./tools/rowboat
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8080:8080"
+    environment:
+      - LLM_PROVIDER=ollama
+      - MODEL=llama3.2
+
+  langgraph:
+    build: ./tools/langgraph
+    depends_on:
+      - rowboat
+
+  claw-code:
+    build: ./tools/claw-code
+    depends_on:
+      - langgraph
+
+  openclaw:
+    build: ./tools/openclaw
+    ports:
+      - "3000:3000"
+
+  mirofish:
+    build: ./tools/mirofish
+
+  picoclaw:
+    build: ./tools/picoclaw
+    ports:
+      - "5000:5000"
+
+  litellm:
+    build: ./tools/litellm
+    ports:
+      - "4000:4000"
+
+volumes:
+  data:
