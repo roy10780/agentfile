@@ -25,3 +25,6 @@
 [submodule "tools/firecrawl"]
 	path = tools/firecrawl
 	url = https://github.com/mendableai/firecrawl.git
+[submodule "tools/pentagi"]
+	path = tools/pentagi
+	url = https://github.com/vxcontrol/pentagi.git
