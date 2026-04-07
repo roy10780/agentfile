@@ -1,3 +1,24 @@
 [submodule "tools/rowboat"]
 	path = tools/rowboat
 	url = https://github.com/rowboatlabs/rowboat.git
+[submodule "tools/oh-my-claudecode"]
+	path = tools/oh-my-claudecode
+	url = https://github.com/yeachan-heo/oh-my-claudecode.git
+[submodule "tools/claw-code"]
+	path = tools/claw-code
+	url = https://github.com/instructkr/claw-code.git
+[submodule "tools/mirofish"]
+	path = tools/mirofish
+	url = https://github.com/666ghj/MiroFish.git
+[submodule "tools/langgraph"]
+	path = tools/langgraph
+	url = https://github.com/langchain-ai/langgraph.git
+[submodule "tools/openclaw"]
+	path = tools/openclaw
+	url = https://github.com/openclaw/openclaw.git
+[submodule "tools/picoclaw"]
+	path = tools/picoclaw
+	url = https://github.com/sipeed/picoclaw.git
+[submodule "tools/litellm"]
+	path = tools/litellm
+	url = https://github.com/BerriAI/litellm.git
