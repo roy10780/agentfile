@@ -22,3 +22,6 @@
 [submodule "tools/litellm"]
 	path = tools/litellm
 	url = https://github.com/BerriAI/litellm.git
+[submodule "tools/firecrawl"]
+	path = tools/firecrawl
+	url = https://github.com/mendableai/firecrawl.git
